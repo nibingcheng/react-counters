@@ -5,8 +5,8 @@ class Header extends Component {
     return (
       <header className="App-header">
         <h1 className="App-title">React Counters</h1>
-        <button>+</button>
-        <button>-</button>
+        <button onClick={this.props.increaseCounters}>+</button>
+        <button onClick={this.props.decreaseCounters}>-</button>
       </header>
     );
   }
